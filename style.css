@@ -352,7 +352,7 @@ button[type="submit"]:hover {
     height: auto;
 }
 
-#resume button {
+#resume-link-2 {
     padding: 10px 20px;
     background-color: #007bff;
     color: #fff;
@@ -361,7 +361,7 @@ button[type="submit"]:hover {
     cursor: pointer;
 }
 
-#resume button:hover {
+#resume-link-2:hover {
     background-color: #0056b3;
 }
 
