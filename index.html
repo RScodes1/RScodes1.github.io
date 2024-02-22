@@ -16,9 +16,9 @@
             <li><a href="#skills" class="nav-link skills">Skills</a></li>
             <li><a href="#projects" class="nav-link projects">Projects</a></li>
             <li><a href="#github">GitHub</a><li>
-            <li><a href="#contact" class="nav-link contact">Contact</a></li>
+            <li style="margin-left: -16px;" ><a href="#contact" class="nav-link contact">Contact</a></li>
                 <a href="resume/Rajasekhar_Korada_Resume.pdf" id="resume-link-1" class="nav-link resume" download>
-                    <button>Download Resume</button>
+                    <button style=" border-radius: 5px; color: blueviolet; font-family: Georgia, 'Times New Roman', Times, serif; padding: 3px; border: 1px green;" >Download Resume</button>
                 </a>
             </li>
          </ul>
@@ -29,7 +29,11 @@
         <div class="container">
             <h1>Welcome to My Portfolio</h1>
             <hr>
-            <h1>Hi, I am Rajasekhar Korada</h1> 
+            <div>
+            <h1 style="font-size: 36px;">Hi, I am Rajasekhar Korada</h1>
+            <br>
+            <h4>Node.js Backend Developer</h4>
+            </div>
             <!-- Your professional photo -->
             <img src="./photos/rajasekhar.jpeg" alt="Professional Photo" class="home-img">
         </div>
@@ -42,13 +46,13 @@
             <div class="about-content">
                 <div class="about-image">
                     <!-- Graphic photo depicting a person using a computer -->
-                    <img src="./photos/1-Programming_fixed-1536x1022.jpg" alt="Graphic Photo">
+                    <img  style="height: 200px; width: 250px;" src="./photos/1-Programming_fixed-1536x1022.jpg" alt="Graphic Photo">
                 </div>
                 <div class="about-details">
                        <div id="user-detail-name">
                        </div>
-                    <p id="user-detail-intro">I'm a Full Stack Web Developer skilled in backend development precisely. My passion for software lies with dreaming up ideas and making them come true with elegant interfaces. I focus on writing clean, elegant, and efficient code. Highly skilled in collaboration, decision-making, and Data Structures & Algorithms.</p>
-                    <ul class="about-stats">
+                    <p style="margin-left: -100px; margin-bottom: 40px;" id="user-detail-intro">I'm a Full Stack Web Developer skilled in backend development precisely. My passion for software lies with dreaming up ideas and making them come true with elegant interfaces. I focus on writing clean, elegant, and efficient code. Highly skilled in collaboration, decision-making, and Data Structures & Algorithms.</p>
+                    <ul style="display: flex; gap: 5%; margin-left: -90px; " class="about-stats">
                         <li><strong>1200+ Hours of Coding</strong></li>
                         <li><strong>2 Projects Completed</strong></li>
                         <li><strong>200+ DSA Problems Solved</strong></li>
@@ -104,11 +108,6 @@
                     <img src="./skills/java_logo.png" alt="Java" class="skills-card-img">
                     <p class="skills-card-name">Java</p>
                 </div>
-                <!-- VSCode -->
-                <div class="skills-card">
-                    <img src="./skills/" alt="VSCode" class="skills-card-img">
-                    <p class="skills-card-name">VSCode</p>
-                </div>
                 <!-- GitHub -->
                 <div class="skills-card">
                     <img src="./skills/github_logo.png" alt="GitHub" class="skills-card-img">
@@ -125,10 +124,6 @@
                     <p class="skills-card-name">Codepen</p>
                 </div>
                 <!-- Figma -->
-                <div class="skills-card">
-                    <img src="./skills/" alt="Figma" class="skills-card-img">
-                    <p class="skills-card-name">Figma</p>
-                </div>
                 <!-- Bootstrap -->
                 <div class="skills-card">
                     <img src="./skills/bootstrap_logo.png" alt="Bootstrap" class="skills-card-img">
@@ -173,7 +168,7 @@
                 <img src="/photos/port-image3.jpg" alt="Project 3" class="project-img">
                 <h3 class="project-title">Portfolio</h3>
                 <p class="project-description">This repository consistes the portfolito site Vestal Trouble.which is collaborative project, build during construct week of 3rd unit in Masai School.</p>
-                <p class="project-tech-stack">Tech Stack Used: HTML, CSS, JavaScript</p>
+                <p class="project-tech-stack">Tech Stack Used: HTML, CSS</p>
                 <a href="https://github.com/RScodes1/Portfolio-Website" class="project-github-link">GitHub Repository</a>
                 <a href="https://vestal-trouble.netlify.app/" class="project-deployed-link">Deployed Link</a>
             </div>
@@ -273,13 +268,31 @@
             <a href="https://github.com/RScodes1" class="github-button">GitHub</a>
             <a href="https://www.linkedin.com/in/rajasekhar-korada-14b417177/" class="linkedin-button">LinkedIn</a>
         </div>
-        <p>Made by Rajasekhar Korada</p>
+        <p>Made by Rajasekhar Korada @2024</p>
     </div>
 </footer>
 
     <!-- Resume Buttons -->
     <!-- Include scripts for functionality if needed -->
-    <!-- For example, scripts for resume button functionality --
+    <!-- For example, scripts for resume button functionality -->
+    <script>
+        // script.js
+document.addEventListener("DOMContentLoaded", function() {
+    // Smooth scroll to anchor links
+    const anchorLinks = document.querySelectorAll('a[href^="#"]');
+    anchorLinks.forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+            if (targetElement) {
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    });
+});
+
+    </script>
    
 </body>
 </html>

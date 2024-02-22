@@ -2,21 +2,19 @@
 * {
     margin: 0;
     padding: 0;
+
     box-sizing: border-box;
 }
 
 /* Body styles */
 body {
+
     font-family :'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4; /* Light background color */
+    background-color:  bisque; /* Light background color */
     color: #333; /* Dark text color */
 }
 
-.dark-mode body {
-    background-color: #333; /* Dark background color */
-    color: #f4f4f4; /* Light text color */
-}
 
 /* Navbar styles */
 #nav-menu {
