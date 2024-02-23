@@ -180,40 +180,35 @@
         </div>
     </section>
 
-    <section style="margin-left: 30px;" id="github">
-        <!-- GitHub statistics content goes here -->
-        <h2>GitHub Statistics</h2>
-            <!-- GitHub streak stats -->
-            <div id="github-streak-stats">
-                <!-- Content for GitHub streak stats goes here -->
-                <h3>GitHub Streak Stats</h3>
-                <a href="https://git.io/streak-stats"><img src="https://github-readme-streak-stats.herokuapp.com?user=RScodes1&theme=dark" alt="GitHub Streak" /></a>         
-               </div>
+    <section class="statistics section" style="margin-left: 30px;" id="github">
+        <h2 class="section_title">Statistics</h2>
+        <!-- GitHub streak stats -->
+       <span class="section_subtitle">My Github Statistics</span>
+        <div class="statistics_container container grid">
+
+            <img id="github-stats-card"
+                src="https://github-readme-stats.vercel.app/api?username=RScodes1"
+                 alt="github-stats-card">
 
             <!-- GitHub top languages -->
-            <div id="github-top-langs">
-                <!-- Content for GitHub top languages goes here -->
-                <h3>GitHub Top Languages</h3>
-                <a href="https://github.com/anuraghazra/github-readme-stats">
-                    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=RScodes1" alt="Top Languages">
-                </a>          
-          </div>
-
+          <img id="github-top-langs"
+                  src="https://github-readme-stats.vercel.app/api/top-langs/?username=RScodes1&langs_count=4&theme=city_light&include_all_commits=true&count_private=true&layout=compact"
+                     alt="github-top-langs">
+  
             <!-- GitHub stats card -->
-            <div id="github-stats-card">
-                <!-- Content for GitHub stats card goes here -->
-                <h3>GitHub Stats Card</h3>
-                <a href="https://github.com/RScodes1/github-readme-stats">
-                    <img src="https://github-readme-stats.vercel.app/api?username=RScodes1" alt="Rajs GitHub stats" />
-                </a>           
-             </div>
+            <img id="github-streak-stats"
+            src="https://github-readme-streak-stats.herokuapp.com/?user=abhaysinh-gaikwad&ring=5094f0&currStreakLabel=5094f0&fire=5094f0&theme=city_light"
+            alt="github-streak-stats">
               <!-- GitHub calendar -->
-        <div style="margin-left: 250px;" class="react-activity-calendar">
-            <h3>GitHub Activity Calendar</h3>
-            <img src="https://ghchart.rshah.org/RScodes1" alt="GitHub Activity Chart">
+        </div> 
+        <span  class="section_subtitle">Github Calendar</span>
+        <div style="margin-left: 250px;" class="react-activity-calendar calendar">
+            <img style="width: 100%;" src="https://ghchart.rshah.org/RScodes1" alt="GitHub Activity Chart">
         </div>
     </section>
    <!-- Contact Section -->
+
+
 <section id="contact">
     <div class="container">
     
@@ -299,3 +294,4 @@ document.addEventListener("DOMContentLoaded", function() {
    
 </body>
 </html>
+
