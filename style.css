@@ -334,6 +334,39 @@ button[type="submit"]:hover {
     justify-content: space-between;
 }
 
+.project-github-link{
+    border: black solid 1px;
+    width : 20vh;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+
+.project-github-link:hover{
+    border: black solid 1px;
+    width : 20vh;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    color: white;
+    background-color: black;    
+}
+.project-deployed-link{
+    border: black solid 1px;
+    width : 20vh;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+.project-deployed-link:hover{
+    border: black solid 1px;
+    width : 20vh;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    color: white;
+    background-color: black;    
+}
 .github-stat-item {
     background-color: #f4f4f4;
     border-radius: 10px;
@@ -385,6 +418,7 @@ footer {
     padding: 20px;
     text-align: center;
 }
+
 
 .footer-content {
     max-width: 1200px;
