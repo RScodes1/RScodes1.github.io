@@ -3,128 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-jxohMvBMS9Q0mCf6t6E+PNI99dXezlK12r9UbzRGcCSh+t47g29H24+aO7hLuZ/z" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/github-calendar/dist/github-calendar.min.js"></script>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="./photos/rajasekhar.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <!-- Navbar -->
-    <nav id="nav-menu">
-        <ul>
-            <li><a href="#home" class="nav-link home">Home</a></li>
-            <li><a style="color:white;" href="#about" class="nav-link about">About</a></li>
-            <li><a href="#skills" class="nav-link skills">Skills</a></li>
-            <li><a href="#resume" class="nav-link resume">Resume</a></li>
-            <li><a href="#projects" class="nav-link projects">Projects</a></li>
-            <li><a href="#github">GitHub</a><li>
-            <li style="margin-left: -16px;" ><a href="#contact" class="nav-link contact">Contact</a></li>
-                <a href="RajasekharKorada-FullStackWebDeveloper-Resume.pdf" class="nav-link resume" download>
-                    <button  style=" border-radius: 5px; color: blueviolet; font-family: Georgia, 'Times New Roman', Times, serif; padding: 3px; border: 1px green;" >Download Resume</button>
-                </a>
-            </li>
-         </ul>
+    <nav id="nav-menu" class="navbar navbar-expand-lg navbar-light bg-light">
+        <a style="margin-left: 140px;" class="navbar-brand" href="#">Portfolio</a>
+       
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" style="margin-right: 100px;" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link home" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link about" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link skills" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link projects" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item" >
+                    <a class="nav-link work" href="#work" >Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link contact" href="#contact">Contact</a>
+                </li>
+               
+                <li class="nav-item">
+                    <a href="RajasekharKorada-FullStackWebDeveloper-Resume.pdf" class="nav-link resume" download>
+                        <button  style=" border-radius: 5px; color: blueviolet; font-family: Georgia, 'Times New Roman', Times, serif; padding: 3px; border: 1px green;" >Download Resume</button>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </nav>
 
     <!-- Home Section -->
-    <section id="home">
-        <div class="container">
-            <h1>Welcome to My Portfolio</h1>
-            <hr>
-            <div>
-            <h1 style="font-size: 36px;">Hi, I am Rajasekhar Korada</h1>
-            <br>
-            <h4>Node.js Backend Developer</h4>
-            </div>
-            <!-- Your professional photo -->
-            <img src="./photos/rajasekhar.jpeg" alt="Professional Photo" class="home-img">
-        </div>
+    <section id="home" class="text-center">
+        <p>Welcome to my Portfolio</p>
+        <img src="./photos/rajasekhar.jpeg" alt="Professional Photo" class="home-img img-fluid rounded-circle">
+        <h1 id="user-detail-name">Hello, I am Rajasekhar Korada</h1>
+        <p>NodeJS Backend Developer</p>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about section">
+    <section id="about" class="about section text-center py-5">
         <div class="container">
             <h2>About Me</h2>
-            <div class="about-content">
+            <!-- user-detail-intro -->
+            <div class="about-content" style="display: flex; flex-direction: column; gap: 10%; align-items: center;">
                 <div class="about-image">
-                    <!-- Graphic photo depicting a person using a computer -->
-                    <img  style="height: 200px; width: 250px;" src="./photos/1-Programming_fixed-1536x1022.jpg" alt="Graphic Photo">
+                    <img  height=250 width=250 src="./photos/1-Programming_fixed-1536x1022.jpg" alt="Graphic Photo">
                 </div>
                 <div class="about-details">
                        <div id="user-detail-name">
                        </div>
-                    <p style="margin-left: -100px; margin-bottom: 40px;" id="user-detail-intro">I'm a Full Stack Web Developer skilled in backend development precisely. My passion for software lies with dreaming up ideas and making them come true with elegant interfaces. I focus on writing clean, elegant, and efficient code. Highly skilled in collaboration, decision-making, and Data Structures & Algorithms.</p>
-                    <ul style="display: flex; gap: 5%; margin-left: -90px; " class="about-stats">
+                    <p style=" margin-bottom: 40px;" id="user-detail-intro">I'm a Full Stack Web Developer skilled in backend development precisely. My passion for software lies with dreaming up ideas and making them come true with elegant interfaces. I focus on writing clean, elegant, and efficient code. Highly skilled in collaboration, decision-making, and Data Structures & Algorithms.</p>
+                    <ul style="display: flex; flex-direction: row; gap: 5%;" class="about-stats">
                         <li><strong>1200+ Hours of Coding</strong></li>
                         <li><strong>4 Projects Completed</strong></li>
                         <li><strong>250+ DSA Problems Solved</strong></li>
                     </ul>
                 </div>
             </div>
+            <br><br><br>
+            <h1 style="text-align: center; font-size: 46px;" >Resumes</h1>
+            <a href = "RajasekharKorada-FullStackWebDeveloper-Resume.pdf" download> <button id = "resume-button-2" style= " margin-bottom: 30px;">View Resume</button></a> 
         </div>
-        <br><br><br>
-        <h1 style="text-align: center; font-size: 46px;" >Resume</h1>
-        <a href = "RajasekharKorada-FullStackWebDeveloper-Resume.pdf" download> <button id = "resume-button-2" style= "margin-left: 654px; margin-bottom: 30px;">View Resume</button></a> 
+       
     </section>
-<a href=""></a>
+
     <!-- Skills Section -->
-    <section id="skills">
+    <section id="skills" class="text-center py-5">
         <div class="container">
             <h2>Skills</h2>
-            <div class="skills-container">
-                <!-- HTML -->
-                <div class="skills-card">
-                    <img src="./skills/html_logo.png" alt="HTML" class="skills-card-img">
-                    <p class="skills-card-name">HTML</p>
+            <div class="row">
+                <div class="col-md-4 skills-card">
+                    <img src="./skills/html_logo.png" alt="HTML" class="skills-card-img img-fluid">
+                    <h3 class="skills-card-name">HTML</h3>
                 </div>
-                <!-- CSS -->
-                <div class="skills-card">
-                    <img src="./skills/css_logo.png" alt="CSS" class="skills-card-img">
-                    <p class="skills-card-name">CSS</p>
+                <div class="col-md-4 skills-card">
+                    <img src="./skills/css_logo.png" alt="CSS" class="skills-card-img img-fluid">
+                    <h3 class="skills-card-name">CSS</h3>
                 </div>
-                <!-- JavaScript -->
-                <div class="skills-card">
-                    <img src="./skills/js_logo.png" alt="JavaScript" class="skills-card-img">
-                    <p class="skills-card-name">JavaScript</p>
+                <div class="col-md-4 skills-card">
+                    <img src="./skills/js_logo.png" alt="JavaScript" class="skills-card-img img-fluid">
+                    <h3 class="skills-card-name">JavaScript 3</h3>
                 </div>
-                <!-- Node.js -->
-                <div class="skills-card">
-                    <img src="./skills/nodejs_logo.png" alt="Node.js" class="skills-card-img">
+                <div class="col-md-4 skills-card">
+                    <img src="./skills/nodejs_logo.png" alt="Node.js" class="skills-card-img img-fluid">
                     <p class="skills-card-name">Node.js</p>
                 </div>
                 <!-- Express -->
-                <div class="skills-card">
-                    <img src="./skills/express_logo.png" alt="Express" class="skills-card-img">
+                <div class="col-md-4 skills-card">
+                    <img src="./skills/express_logo.png" alt="Express" class="skills-card-img img-fluid">
                     <p class="skills-card-name">Express.js</p>
                 </div>
                 <!-- SQL -->
-                <div class="skills-card">
-                    <img src="./skills/sql_logo.png" alt="SQL" class="skills-card-img">
+                <div class="col-md-4 skills-card">
+                    <img src="./skills/sql_logo.png" alt="SQL" class="skills-card-img img-fluid">
                     <p class="skills-card-name">SQL</p>
                 </div>
                 <!-- MongoDB -->
-                <div class="skills-card">
-                    <img src="./skills/mongodb_logo.png" alt="MongoDB" class="skills-card-img">
+                <div class="col-md-4 skills-card">
+                    <img src="./skills/mongodb_logo.png" alt="MongoDB" class="skills-card-img img-fluid">
                     <p class="skills-card-name">MongoDB</p>
                 </div>
                 <!-- Java -->
-                <div class="skills-card">
-                    <img src="./skills/java_logo.png" alt="Java" class="skills-card-img">
+                <div class="col-md-4 skills-card">
+                    <img src="./skills/java_logo.png" alt="Java" class="skills-card-img img-fluid">
                     <p class="skills-card-name">Java</p>
                 </div>
                 <!-- GitHub -->
-                <div class="skills-card">
-                    <img src="./skills/github_logo.png" alt="GitHub" class="skills-card-img">
+                <div class="col-md-4 skills-card">
+                    <img src="./skills/github_logo.png" alt="GitHub" class="skills-card-img img-fluid">
                     <p class="skills-card-name">GitHub</p>
                 </div>
                 <!-- Codepen -->
-                <div class="skills-card">
-                    <img src="./skills/codepen_logo.png" alt="Codepen" class="skills-card-img">
+                <div class="col-md-4 skills-card">
+                    <img src="./skills/codepen_logo.png" alt="Codepen" class="skills-card-img img-fluid">
                     <p class="skills-card-name">Codepen</p>
                 </div>
                 <!-- Bootstrap -->
-                <div class="skills-card">
-                    <img src="./skills/bootstrap_logo.png" alt="Bootstrap" class="skills-card-img">
+                <div class="col-md-4 skills-card">
+                    <img src="./skills/bootstrap_logo.png" alt="Bootstrap" class="skills-card-img img-fluid">
                     <p class="skills-card-name">Bootstrap</p>
                 </div>
             </div>
@@ -132,66 +143,48 @@
     </section>
     <br>
     <br><br><br><br>
-    
+
     <section id="resume">
         <h2 style="text-align: center;" >Resume</h2>
-        <button style= "margin-left: 654px; margin-bottom: 30px;" id= "resume-button-1" onclick="window.open('Rajasekhar_Korada_Resume.pdf', '_blank')">View Resume</button>
+        <button style= "margin-bottom: 30px;" id= "resume-button-1" onclick="window.open('Rajasekhar_Korada_Resume.pdf', '_blank')">View Resume</button>
     </section>
     
-    <!-- Projects Sect  -->
-    <section id="projects">
+    <!-- Projects Section -->
+    <section id="projects" class="text-center py-5">
         <div class="container">
-            <h2 style="text-align: center;" >Projects</h2>            
-            <div class="project-card">
-                <!-- Project 1 -->
-                <img src="./photos/imind-image1.jpg" alt="Project 1" class="project-img">
-                <h3 class="project-title">Imind</h3>
-                <p class="project-description">Welcome to the Blog Webpage! - iMind Webpage - The scope of the project is to create awareness about mental health for the Indian audiences because how little people care about the overall well being of individuals keeping physical health apart. From this website and our efforts we want to create that impact among masses and along with it, set up necessary treatments so people want to visit our website very frequently.</p>
-                <p class="project-tech-stack">Tech Stack Used: HTML, CSS, JavaScript</p>
-                <a href="https://github.com/RScodes1/code-cruncher-2109" class="project-github-link">GitHub Repository</a>
-                <a href="https://github.com/RScodes1/code-cruncher-2109" class="project-deployed-link">Deployed Link</a>
+            <h2>Projects</h2>
+            <div class="row">
+                <div class="col-md-4 project-card">
+                    <img src="./photos/imind-image1.jpg" alt="Project 1" class="img-fluid">
+                    <h3 class="project-title">Imind</h3>
+                    <p class="project-description">Welcome to the Blog Webpage! - iMind Webpage - The scope of the project is to create awareness about mental health for the Indian audiences because how little people care about the overall well being of individuals keeping physical health apart. From this website and our efforts we want to create that impact among masses and along with it, set up necessary treatments so people want to visit our website very frequently.</p>
+                    <p class="project-tech-stack">Tech Stack Used: HTML, CSS, JavaScript</p>
+                    <a href="https://github.com/RScodes1/code-cruncher-2109" class="project-github-link" target="_blank">GitHub Repository</a>
+                    <a href="https://github.com/RScodes1/code-cruncher-2109" class="project-deployed-link" target="_blank">Deployed Link</a>
+                </div>
+                <div class="col-md-4 project-card">
+                    <img src="./photos/alca-image2.jpg" alt="Project 2" class="img-fluid">
+                    <h3 class="project-title">Alczar Travel</h3>
+                    <p class="project-description">About Alcazar is one of the most used travel agency website.Discover a world of convenience and luxury as we offer a comprehensive array of facilities to elevate every aspect of your getaway. From handpicked accommodations to curated itineraries, we specialize in crafting unforgettable</p>
+                    <p class="project-tech-stack">Tech Stack Used: HTML, CSS, JavaScript</p>
+                    <a href="https://github.com/RScodes1/Alcazar_Travel_Website" class="project-github-link" target="_blank">GitHub Repository</a>
+                    <a href="https://alcazartravel.netlify.app/" class="project-deployed-link" target="_blank">Deployed Link</a>
+                </div>
+                <div class="col-md-4 project-card">
+                    <img src="/photos/CodeCollab.jpeg" alt="Project 3" class="img-fluid">
+                    <h3 class="project-title">CodeCollab</h3>
+                    <p class="project-description">Code Collab: Versatile code editor enabling multi-language coding with real-time output visualization for seamless collaborative development.</p>
+                    <p class="project-tech-stack">Tech Stack Used: HTML, CSS, JS, NodeJS, ExpressJS, MongoDB,GitHub</p>
+                    <a href="https://github.com/RScodes1/RScodes-CodeCollab" class="project-github-link" target="_blank">GitHub Repository</a>
+                    <a href="cwcode-collacode-481ac6.netlify.app/" class="project-deployed-link" target="_blank">Deployed Link</a>
+                </div>
             </div>
-            <!-- Add more project cards as needed -->
-        </div>
-        <div class="container">
-            <div class="project-card">
-                <!-- Project 1 -->
-                <img src="./photos/alca-image2.jpg" alt="Project 2" class="project-img">
-                <h3 class="project-title">Alczar Travel</h3>
-                <p class="project-description">About Alcazar is one of the most used travel agency website.Discover a world of convenience and luxury as we offer a comprehensive array of facilities to elevate every aspect of your getaway. From handpicked accommodations to curated itineraries, we specialize in crafting unforgettable</p>
-                <p class="project-tech-stack">Tech Stack Used: HTML, CSS, JavaScript</p>
-                <a href="https://github.com/RScodes1/Alcazar_Travel_Website" class="project-github-link">GitHub Repository</a>
-                <a href="https://alcazartravel.netlify.app/" class="project-deployed-link">Deployed Link</a>
-            </div>
-            <!-- Add more project cards as needed -->
-        </div>
-        <div class="container">
-            <div class="project-card">
-                <!-- Project 1 -->
-                <img src="/photos/CodeCollab.jpeg" alt="Project 3" class="project-img">
-                <h3 class="project-title">CodeCollab</h3>
-                <p class="project-description">Code Collab: Versatile code editor enabling multi-language coding with real-time output visualization for seamless collaborative development.</p>
-                <p class="project-tech-stack">Tech Stack Used: HTML, CSS, JS, NodeJS, ExpressJS, MongoDB,GitHub</p>
-                <a href="https://github.com/RScodes1/RScodes-CodeCollab" class="project-github-link">GitHub Repository</a>
-                <a href="cwcode-collacode-481ac6.netlify.app/" class="project-deployed-link">Deployed Link</a>
-            </div>
-            <!-- Add more project cards as needed -->
-        </div>
-        <div class="container">
-            <div class="project-card">
-                <!-- Project 1 -->
-                <img src="/photos/port-image.png" alt="Project 3" class="project-img">
-                <h3 class="project-title">PortFolio</h3>
-                <p class="project-description">This website consists the portfolito site Vestal Trouble.which is collaborative project, build during construct week of 3rd unit in Masai School.</p>
-                <p class="project-tech-stack">Tech Stack Used: HTML, CSS, JS,GitHub</p>
-                <a href="https://github.com/RScodes1/Portfolio-Website" class="project-github-link">GitHub Repository</a>
-                <a href="https://vestal-trouble.netlify.app/" class="project-deployed-link">Deployed Link</a>
-            </div>
-            <!-- Add more project cards as needed -->
         </div>
     </section>
 
-    <section class="statistics section" style="margin-left: 30px;" id="github">
+    <!-- Contact Section -->
+
+    <section class="text-center py-5" style="margin-left: 30px;" id="github">
         <h2 class="section_title">Statistics</h2>
         <!-- GitHub streak stats -->
        <span class="section_subtitle">My Github Statistics</span>
@@ -209,102 +202,101 @@
                 src="https://github-readme-stats.vercel.app/api?username=RScodes1"
                  alt="github-stats-card">
 
-            <!-- GitHub top languages -->
-        
-  
-            <!-- GitHub stats card -->
-            
-              <!-- GitHub calendar -->
         </div> 
         <span  class="section_subtitle">Github Calendar</span>
-        <div style="margin-left: 250px;" class="react-activity-calendar calendar">
+        <div style="margin-left: auto; margin-right: auto;" class="react-activity-calendar calendar">
             <img style="width: 100%;" src="https://ghchart.rshah.org/RScodes1" alt="GitHub Activity Chart">
         </div>
     </section>
-   <!-- Contact Section -->
 
+     <section id="work">
+        <div class="container">
+            <img height=100 width=100  src="https://media.licdn.com/dms/image/D4D0BAQFYmHICmuU1Jg/company-logo_200_200/0/1694680870805/softwin_systems_pvt_ltd_logo?e=2147483647&v=beta&t=8tf2UxPVAu0ISrfABudbs-5J_La6tL72dIcZkXhsAUA" alt="softwin">
+            <h2 id="organisation-name">Softwin Systems Pvt. Ltd.</h2>
+            <p>June 2024 - Aug 2024</p>
+            <p id="organisation-work">I worked as a full stack web developer at Softwin Systems located in Mohali, Punjab. Worked on a CRM website, started with ReactJS whilst working on the backend of the project.</p>
+        </div>
+    </section>
 
-<section id="contact">
-    <div class="container">
+    <section id="contact" class="text-center py-5">
+        <div class="container">
+            <div class="contact-info">
+                <h2>Contact Me</h2>
+                <p>Feel free to reach out to me!</p>
+                <div id="contact-phone" class="contact-info-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+91 6302032631</span>
+                </div>
+                <div id ="contact-email" class="contact-info-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>raj19all@gmail.com</span>
+                </div>
+                <div class="contact-info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Viziangaram, Andhra Pradesh</span>
+                </div>
+                <div id="contact-github" class="contact-info-item">
+                    <i class="fab fa-linkedin"></i>
+                    <span><a href="https://www.linkedin.com/in/rajasekhar-korada-14b417177/">LinkedIn Profile</a></span>
+                </div>
+                <div id="contact-linkedin" class="contact-info-item">
+                    <i class="fab fa-github"></i>
+                    <span><a href="https://github.com/RScodes1">GitHub Profile</a></span>
+                </div>
+            </div>
+            
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h3>Send Me a Message</h3>
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <input type="text" name="name" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" id="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- GitHub Stats Section -->
+    <footer>
+        <div class="footer-content">
+            <p>Rajasekhar Korada</p>
+            <p>Node.js Backend Developer</p>
+            <div class="footer-buttons">
+                <a href="https://github.com/RScodes1" class="github-button">GitHub</a>
+                <a href="https://www.linkedin.com/in/rajasekhar-korada-14b417177/" class="linkedin-button">LinkedIn</a>
+            </div>
+            <p>Made by Rajasekhar Korada @2024</p>
+        </div>
+    </footer>
     
-        <!-- Contact Icons and Information -->
-        <div class="contact-info">
-            <h2>Contact Me</h2>
-            <p>Feel free to reach out to me!</p>
-            <div id="contact-phone" class="contact-info-item">
-                <i class="fas fa-phone"></i>
-                <span>+91 6302032631</span>
-            </div>
-            <div id ="contact-email" class="contact-info-item">
-                <i class="fas fa-envelope"></i>
-                <span>raj19all@gmail.com</span>
-            </div>
-            <div class="contact-info-item">
-                <i class="fas fa-map-marker-alt"></i>
-                <span>Viziangaram, Andhra Pradesh</span>
-            </div>
-            <div id="contact-github" class="contact-info-item">
-                <i class="fab fa-linkedin"></i>
-                <span><a href="https://www.linkedin.com/in/rajasekhar-korada-14b417177/">LinkedIn Profile</a></span>
-            </div>
-            <div id="contact-linkedin" class="contact-info-item">
-                <i class="fab fa-github"></i>
-                <span><a href="https://github.com/RScodes1">GitHub Profile</a></span>
-            </div>
-        </div>
-        
-        <!-- Contact Form -->
-        <div class="contact-form">
-            <h3>Send Me a Message</h3>
-            <form action="#" method="POST">
-                <div class="form-group">
-                    <input type="text" name="name" id="name" placeholder="Your Name" required>
-                </div>
-                <div class="form-group">
-                    <input type="email" name="email" id="email" placeholder="Your Email" required>
-                </div>
-                <div class="form-group">
-                    <textarea name="message" id="message" rows="5" placeholder="Your Message" required></textarea>
-                </div>
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
-    </div>
-</section>
-  
-<footer>
-    <div class="footer-content">
-        <p>Rajasekhar Korada</p>
-        <p>Node.js Backend Developer</p>
-        <div class="footer-buttons">
-            <a href="https://github.com/RScodes1" class="github-button">GitHub</a>
-            <a href="https://www.linkedin.com/in/rajasekhar-korada-14b417177/" class="linkedin-button">LinkedIn</a>
-        </div>
-        <p>Made by Rajasekhar Korada @2024</p>
-    </div>
-</footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-   
-    <script>
-        // script.js
-document.addEventListener("DOMContentLoaded", function() {
-    // Smooth scroll to anchor links
-    const anchorLinks = document.querySelectorAll('a[href^="#"]');
-    anchorLinks.forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-            const targetId = this.getAttribute('href').substring(1);
-            const targetElement = document.getElementById(targetId);
-            if (targetElement) {
-                targetElement.scrollIntoView({ behavior: 'smooth' });
-            }
+    <script> 
+     document.addEventListener("DOMContentLoaded", function() {
+        // Smooth scroll to anchor links
+        const anchorLinks = document.querySelectorAll('a[href^="#"]');
+        anchorLinks.forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
         });
-    });
-});
-
-
+    }); 
     </script>
    
 </body>
 </html>
-
