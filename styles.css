@@ -63,6 +63,16 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
+body {
+    padding-top: 70px; /* Adjust based on the height of your navbar */
+}
+.navbar-nav .nav-link {
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+.navbar-nav .nav-link:hover {
+    background-color: #f8f9fa;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
 .react-activity-calendar {
     margin: 0 auto; 
     max-width: 100%;
