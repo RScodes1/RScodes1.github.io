@@ -64,7 +64,7 @@ body {
 }
 
 body {
-    padding-top: 70px; /* Adjust based on the height of your navbar */
+    padding-top: 70px; 
 }
 .navbar-nav .nav-link {
     transition: background-color 0.3s, box-shadow 0.3s;
@@ -81,8 +81,8 @@ body {
 }
 
 .react-activity-calendar img {
-    width: 100%; /* Responsive image for calendar */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%; 
+    height: auto; 
 }
 
 
@@ -242,20 +242,20 @@ a#resume-link-2 {
 /* Footer Styles */
 
 footer {
-    background-color: #34495e; /* Dark blue-gray background */
-    color: #ffffff; /* White text color */
-    padding: 20px 0; /* Vertical padding */
-    text-align: center; /* Center-align text */
+    background-color: #34495e; 
+    color: #ffffff; 
+    padding: 20px 0; 
+    text-align: center; 
 }
 
 .footer-content {
-    max-width: 800px; /* Maximum width for content */
-    margin: 0 auto; /* Center the footer content */
+    max-width: 800px; 
+    margin: 0 auto; 
 }
 
 .footer-content p {
-    margin: 5px 0; /* Small margin for paragraph spacing */
-    font-size: 1rem; /* Base font size */
+    margin: 5px 0; 
+    font-size: 1rem; 
 }
 
 .footer-buttons {
@@ -263,22 +263,22 @@ footer {
 }
 
 .footer-buttons a {
-    color: #ffffff; /* White text color for buttons */
-    background-color: #e74c3c; /* Red background for buttons */
-    padding: 10px 15px; /* Padding for buttons */
-    border-radius: 5px; /* Rounded corners */
-    text-decoration: none; /* Remove underline */
-    transition: background-color 0.3s; /* Smooth transition for background color */
-    margin: 0 10px; /* Margin between buttons */
+    color: #ffffff; 
+    background-color: #e74c3c; 
+    padding: 10px 15px; 
+    border-radius: 5px; 
+    text-decoration: none;
+    transition: background-color 0.3s; 
+    margin: 0 10px; 
 }
 
 .footer-buttons a:hover {
-    background-color: #c0392b; /* Darker red on hover */
+    background-color: #c0392b; 
 }
 
 @media (max-width: 600px) {
     .footer-content {
-        padding: 0 20px; /* Add horizontal padding for small screens */
+        padding: 0 20px; 
     }
   
 }
